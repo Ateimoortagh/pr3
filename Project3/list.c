@@ -6,6 +6,7 @@
 #include "list.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 static Node * Node_construct(int v)
 {
 Node * n = malloc(sizeof(Node));

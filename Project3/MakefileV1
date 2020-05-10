@@ -1,0 +1,8 @@
+test: test.o list.o   # Meaning: target test depends of test.o list.o  
+	gcc -o test test.o list.o  # Command to make the target
+
+test.o: test.c list.c      # Meaning: target test.o depends on test.c list.c
+	gcc -c test.c list.c        # Command to make the target
+
+list.o: list.c   list.h #target list.o depends on list.c and indirectly on list.h	
+	gcc -c list.c
