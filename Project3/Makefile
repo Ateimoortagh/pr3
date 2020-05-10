@@ -1,7 +1,7 @@
 CC 	 = gcc	#compiler name
 CFLAGS   = -Wall # compress all warning, choose your own compile flags (if any)
-TARGET   = listmain
-OBJFILES = listmain.o list.o
+TARGET   = test
+OBJFILES = test.o list.o
   
 $(TARGET): $(OBJFILES)  
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) 
